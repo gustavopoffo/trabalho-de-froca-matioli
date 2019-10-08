@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1570557754 source:e:\sugundo ano matioli\cacapalavras\main.c
+	<stdio.h>
+	<stdlib.h>
+	"forca.h"
+
+1570557618 e:\sugundo ano matioli\cacapalavras\forca.h
+
+1570559096 source:e:\sugundo ano matioli\cacapalavras\forca.c
+	<stdio.h>
+	<stdlib.h>
+	"forca.h"
+	<string.h>
+
