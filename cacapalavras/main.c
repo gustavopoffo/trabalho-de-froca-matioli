@@ -9,7 +9,7 @@ void copyright(){
     printf("=============================================================\n\n");
     printf("JOGO DA FORCA\n");
     printf("Desenvolvido por:Victor Hugo da Silva Lima 18153\n Gustavo de Araujo Poffo 18132\n");
-    printf("\tXXXXX - NNNNNNNNNNNNNNNNNNN\n");
+  
     printf("=============================================================\n\n");
 }
 
