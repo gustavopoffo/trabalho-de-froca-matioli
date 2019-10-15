@@ -8,7 +8,7 @@ void copyright(){
     system("clear");
     printf("=============================================================\n\n");
     printf("JOGO DA FORCA\n");
-    printf("Desenvolvido por: \n\tXXXXX - NNNNNNNNNNNNNNNNNNN\n");
+    printf("Desenvolvido por:Victor Hugo da Silva Lima 18153\n Gustavo de Araujo Poffo 18132\n");
     printf("\tXXXXX - NNNNNNNNNNNNNNNNNNN\n");
     printf("=============================================================\n\n");
 }
@@ -49,7 +49,7 @@ int main(int argc, char *argv[])
         if(sorteada!=NULL){
             printf("%s\n", sorteada->palavra);
         }else{
-            printf("Não tem palavra disponível!\n\n");
+            printf("NÃ£o tem palavra disponÃ­vel!\n\n");
         }
     }while(getchar()!='f');
 
