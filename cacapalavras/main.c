@@ -4,7 +4,7 @@
 #include "forca.h"
 void exibe()
 {
-    printf("Desenvolvido por:\nVictor Hugo 18153 Gustavi Poffo 18132");
+    printf("Desenvolvido por:\nVictor Hugo 18153 Gustavo Poffo 18132");
 
 }
 
