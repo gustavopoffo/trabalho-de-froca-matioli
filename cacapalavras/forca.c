@@ -3,7 +3,7 @@
 #include <string.h>
 #include "forca.h"
 
-//gera um numero aleatorio entre 1 e 'maximo'
+
 int geraAleatorio(int maximo)
 {
     time_t t;
@@ -37,7 +37,6 @@ void imprimeListaSecreta(NoSecreto *l)
         printf("%d) %-30s\t%s\n", p->status,p->palavra,p->assunto);
     }
 }
-
 NoSecreto * carregaListaArquivo(NoSecreto * l, char nomeArq[255])
 {
     const char ch[2]=";";
@@ -72,7 +71,6 @@ NoSecreto * carregaListaArquivo(NoSecreto * l, char nomeArq[255])
     return l;
 }
 
-//
 int tamanhoListaSecreta(NoSecreto *l)
 {
     int n=0;
@@ -106,11 +104,9 @@ NoSecreto * sorteiaPalavra(NoSecreto *l)
     }
     return NULL;
 }
-
-//retorna a palavra que está na posicao 'pos' da lisata secreta
 NoSecreto * retornaPalavraPos(NoSecreto *l, int pos)
 {
-    int n=1;
+        int n=1;
     NoSecreto *p;
     for(p=l; p!=NULL; p=p->prox)
     {
@@ -120,6 +116,39 @@ NoSecreto * retornaPalavraPos(NoSecreto *l, int pos)
     return p;
 }
 
+NoSecreto* retiraUmElemento (NoSecreto* l, char v[31])
+{
+    NoSecreto* ant = NULL;
+    NoSecreto* p = l;
+    while (p != NULL && p->palavra != v) {
+        ant = p;
+        p = p->prox;
+    }
 
+    if (p == NULL)
+        return l;
 
+    if (ant == NULL) {
+        l = p->prox;
+    }
+    else {
+    ant->prox = p->prox;
+    }
+    free(p);
+    return l;
+}
+
+NoSecreto* insere (NoSecreto* l, char i[31])
+{
+    NoSecreto* novo = (NoSecreto*) malloc(sizeof(NoSecreto));
+    strcpy(novo->palavra, i);
+    novo->prox = l;
+    return novo;
+}
+int conta(char *s)
+{
+   int i;
+   for (i = 0; s[i] != '\0'; ++i) ;
+   return i;
+}
 
