@@ -1,7 +1,5 @@
 #ifndef FORCA_H_INCLUDED
 #define FORCA_H_INCLUDED
-
-/* definição de uma Macro para limpeza do console */
 #ifdef _WIN32
 # define CLEAR_SCREEN system ("cls")
 #else
@@ -14,23 +12,23 @@ struct noSecreto{
     char assunto[101];
     struct noSecreto * prox;
 };
-
+int conta(char *str);
 typedef struct noSecreto NoSecreto;
 typedef struct noSorteada NoSorteada;
 
+
+int temPalavraNaoUsada(NoSecreto *l);
+NoSecreto * retiraUmElemento (NoSecreto* l, char v[31]);
+NoSecreto * insere (NoSecreto* l, char i[31]);
+int tamanhoListaSecreta(NoSecreto *l);
+NoSecreto * retornaPalavraPos(NoSecreto *l, int pos);
 int geraAleatorio(int maximo);
 NoSecreto * inicializaListaSecreta();
 NoSecreto * carregaListaArquivo(NoSecreto *l, char nomeArq[255]);
 void imprimeListaSecreta(NoSecreto *l);
 NoSecreto * inserePalavraSecreta(NoSecreto *l,char word[31],char subject[100]);
 NoSecreto * sorteiaPalavra(NoSecreto *l);
-int temPalavraNaoUsada(NoSecreto *l);
 
-//retorna no tamanho da lista, para saber o intervalo de valores para gerar uma posicao
-//aleatoria, para sortear uma palavra secreta
-int tamanhoListaSecreta(NoSecreto *l);
 
-//retorna a palavra que esteja em uma dada posição na lista de palavras secretas
-NoSecreto * retornaPalavraPos(NoSecreto *l, int pos);
 
 #endif // FORCA_H_INCLUDED
