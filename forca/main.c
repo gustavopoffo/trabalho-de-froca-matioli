@@ -12,7 +12,7 @@ int main()
 {
     char nome[20];
  
-
+    char aux2[30];
     char aux;
     int help = 0;
     int a = 0;
@@ -59,6 +59,7 @@ do{
         if(sorteada!=NULL){
                 strcpy(aux1,sorteada->palavra);
             n = conta(sorteada->palavra);
+            strcpy(aux2,sorteada->palavra);
 
             for(int i = 0; i<n; i++)
             {
@@ -100,6 +101,7 @@ do{
             {
             system("cls");
             printf("\nEncontrou a palavra em %d tentaivas\n",cont);
+            printf("A palavra era %s",aux2);
             printf("Escolhendo nova palavra........\n");
             }
             else{
