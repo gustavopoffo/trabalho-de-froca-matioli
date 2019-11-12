@@ -26,7 +26,7 @@ do{
      printf("Bem vindo ao jogo %s\n",nome);
      printf("Jogar - 1\n");
      printf("Sair - 0\n");
-     printf("Configurações - 2");
+     printf("Configuracoes - 2\n");
      scanf("%d",&a);
     fflush(stdin);
       if(a == 1)
