@@ -1,0 +1,23 @@
+# depslib dependency file v1.0
+1573576302 source:c:\jogadaforcacomlistas\forca\forca.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"forca.h"
+
+1573576326 c:\jogadaforcacomlistas\forca\forca.h
+
+1573576302 source:c:\users\aluno\desktop\forca\forca.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"forca.h"
+
+1573576326 c:\users\aluno\desktop\forca\forca.h
+
+1573576452 source:c:\users\aluno\desktop\forca\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"forca.h"
+
