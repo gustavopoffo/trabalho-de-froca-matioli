@@ -11,8 +11,7 @@ void exibe()
 int main()
 {
     char nome[20];
-    printf("Digite seu nome:\n");
-    gets(nome);
+   
 
     char aux;
     int help = 0;
@@ -28,6 +27,12 @@ do{
      printf("Sair - 0\n");
      scanf("%d",&a);
     fflush(stdin);
+    if (a == 2)
+       {
+            printf("Digite seu nome:\n");
+           gets(nome);
+       }
+    
       if(a == 1)
       {
        b = 0;
