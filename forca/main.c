@@ -12,7 +12,7 @@ int main()
 {
     char nome[20];
    
-    char aux2;
+    char aux2[30];
     char aux;
     int help = 0;
     int a = 0;
