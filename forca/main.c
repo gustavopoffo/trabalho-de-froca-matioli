@@ -78,7 +78,7 @@ do{
                         cont= cont+1;
             exibe();
             printf("%s\n", sorteada->palavra);
-
+            printf("%s\n", sorteada->assunto);
             printf("Digite uma letra:\n");
 
             scanf("%c",&letra);
