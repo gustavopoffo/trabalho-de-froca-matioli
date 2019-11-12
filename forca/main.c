@@ -23,6 +23,7 @@ int main()
 do{
      system("cls");
      printf("Bem vindo ao jogo %s\n",nome);
+     printf("configuracoes - 2\n");
      printf("Jogar - 1\n");
      printf("Sair - 0\n");
      scanf("%d",&a);
@@ -76,7 +77,7 @@ do{
                         cont= cont+1;
             exibe();
             printf("%s\n", sorteada->palavra);
-
+             printf("%s\n", sorteada->assunto);
             printf("Digite uma letra:\n");
 
             scanf("%c",&letra);
